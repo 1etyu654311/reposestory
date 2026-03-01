@@ -1,0 +1,67 @@
+---
+import { t, type Locale } from '@i18n/utils';
+import type { TocItem } from '@utils/toc';
+
+interface Props {
+  headings: TocItem[];
+  lang: Locale;
+}
+
+const { headings, lang } = Astro.props;
+---
+
+{headings.length > 0 && (
+  <nav class="space-y-1" aria-label={t(lang, 'article.toc')}>
+    <h3 class="text-sm font-semibold text-surface-800 dark:text-surface-200 mb-4 uppercase tracking-wider">
+      {t(lang, 'article.toc')}
+    </h3>
+    <ul class="space-y-1 text-sm border-s-2 border-surface-200 dark:border-surface-700">
+      {headings.map((heading) => (
+        <li
+          class={`${heading.depth === 3 ? 'ps-6' : heading.depth === 4 ? 'ps-8' : 'ps-4'}`}
+        >
+          <a
+            href={`#${heading.slug}`}
+            class="toc-link block py-1.5 text-surface-500 dark:text-surface-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors border-s-2 border-transparent -ms-[2px] hover:border-primary-500"
+            data-heading={heading.slug}
+          >
+            {heading.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}
+
+<script>
+  // Highlight active heading in TOC
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const headingElements = Array.from(tocLinks).map((link) => {
+    const slug = link.getAttribute('data-heading');
+    return slug ? document.getElementById(slug) : null;
+  }).filter(Boolean) as HTMLElement[];
+
+  function updateActive() {
+    let currentIndex = 0;
+    const scrollTop = window.scrollY + 100;
+
+    headingElements.forEach((el, i) => {
+      if (el.offsetTop <= scrollTop) {
+        currentIndex = i;
+      }
+    });
+
+    tocLinks.forEach((link, i) => {
+      if (i === currentIndex) {
+        link.classList.add('text-primary-600', 'dark:text-primary-400', 'border-primary-500', 'font-medium');
+        link.classList.remove('text-surface-500', 'dark:text-surface-500', 'border-transparent');
+      } else {
+        link.classList.remove('text-primary-600', 'dark:text-primary-400', 'border-primary-500', 'font-medium');
+        link.classList.add('text-surface-500', 'dark:text-surface-500', 'border-transparent');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+</script>

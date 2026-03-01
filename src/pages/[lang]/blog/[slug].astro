@@ -1,0 +1,126 @@
+---
+import ArticleLayout from '@layouts/ArticleLayout.astro';
+import ArticleHero from '@components/article/ArticleHero.astro';
+import AuthorBox from '@components/article/AuthorBox.astro';
+import RelatedPosts from '@components/article/RelatedPosts.astro';
+import PostNavigation from '@components/article/PostNavigation.astro';
+import ShareButtons from '@components/article/ShareButtons.astro';
+import Breadcrumbs from '@components/common/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { locales, t, type Locale } from '@i18n/utils';
+import { generateToc } from '@utils/toc';
+import { getReadingTime } from '@utils/reading-time';
+import { getArticleJsonLd } from '@utils/seo';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+
+  return allPosts.map((post) => {
+    const [lang, ...slugParts] = post.slug.split('/');
+    const slug = slugParts.join('/');
+    return {
+      params: { lang, slug },
+      props: { post },
+    };
+  });
+}
+
+const { post } = Astro.props;
+const { lang } = Astro.params as { lang: Locale; slug: string };
+
+const { Content, headings } = await post.render();
+const tocItems = generateToc(headings);
+const readingTime = post.body ? getReadingTime(post.body, lang) : 5;
+
+// Get all posts in the same language for navigation and related
+const allPosts = await getCollection('blog', ({ slug, data }) => {
+  return slug.startsWith(`${lang}/`) && !data.draft;
+});
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Find current post index for prev/next navigation
+const currentIndex = sortedPosts.findIndex((p) => p.slug === post.slug);
+const prevPost = currentIndex < sortedPosts.length - 1
+  ? { slug: sortedPosts[currentIndex + 1].slug, title: sortedPosts[currentIndex + 1].data.title }
+  : null;
+const nextPost = currentIndex > 0
+  ? { slug: sortedPosts[currentIndex - 1].slug, title: sortedPosts[currentIndex - 1].data.title }
+  : null;
+
+// Related posts (same category or matching tags, excluding current)
+const relatedPosts = sortedPosts
+  .filter((p) => p.slug !== post.slug)
+  .filter((p) =>
+    p.data.category === post.data.category ||
+    p.data.tags.some((tag: string) => post.data.tags.includes(tag))
+  )
+  .slice(0, 4);
+
+// JSON-LD structured data
+const jsonLd = getArticleJsonLd({
+  title: post.data.title,
+  description: post.data.description,
+  url: Astro.url.href,
+  image: post.data.image,
+  datePublished: post.data.pubDate.toISOString(),
+  dateModified: post.data.updatedDate?.toISOString(),
+  author: post.data.author.name,
+});
+
+const breadcrumbs = [
+  { label: t(lang, 'nav.blog'), href: `/${lang}/blog/` },
+  { label: post.data.title, href: Astro.url.pathname },
+];
+---
+
+<ArticleLayout
+  title={post.data.title}
+  description={post.data.description}
+  image={post.data.image}
+  publishedTime={post.data.pubDate.toISOString()}
+  modifiedTime={post.data.updatedDate?.toISOString()}
+  headings={tocItems}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <ShareButtons url={Astro.url.href} title={post.data.title} lang={lang} />
+
+  <Breadcrumbs lang={lang} items={breadcrumbs} />
+
+  <ArticleHero
+    title={post.data.title}
+    image={post.data.image}
+    category={post.data.category}
+    pubDate={post.data.pubDate}
+    readingTime={readingTime}
+    lang={lang}
+  />
+
+  <!-- Tags -->
+  {post.data.tags.length > 0 && (
+    <div class="flex flex-wrap gap-2 mb-8">
+      {post.data.tags.map((tag: string) => (
+        <span class="badge">{tag}</span>
+      ))}
+    </div>
+  )}
+
+  <!-- Article Body -->
+  <div class="prose prose-lg dark:prose-dark max-w-none">
+    <Content />
+  </div>
+
+  <!-- Author Box -->
+  <AuthorBox
+    name={post.data.author.name}
+    avatar={post.data.author.avatar}
+    bio={post.data.author.bio}
+    lang={lang}
+  />
+
+  <!-- Post Navigation -->
+  <PostNavigation lang={lang} prev={prevPost} next={nextPost} />
+
+  <!-- Related Posts -->
+  <RelatedPosts lang={lang} posts={relatedPosts} />
+</ArticleLayout>

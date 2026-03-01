@@ -1,0 +1,52 @@
+---
+import { t, type Locale } from '@i18n/utils';
+import { formatDate } from '@utils/seo';
+
+interface Props {
+  lang: Locale;
+  posts: {
+    slug: string;
+    data: {
+      title: string;
+      description: string;
+      image: string;
+      pubDate: Date;
+      category: string;
+    };
+  }[];
+}
+
+const { lang, posts } = Astro.props;
+---
+
+{posts.length > 0 && (
+  <section class="mt-16 pt-10 border-t border-surface-200 dark:border-surface-800">
+    <h2 class="text-2xl font-bold text-surface-900 dark:text-surface-50 mb-8">
+      {t(lang, 'article.related')}
+    </h2>
+
+    <div class="grid gap-6 sm:grid-cols-2">
+      {posts.slice(0, 4).map((post) => (
+        <a href={`/${lang}/blog/${post.slug.split('/').pop()}/`} class="group">
+          <article class="card overflow-hidden hover-lift flex flex-row h-32">
+            <div class="w-32 shrink-0 overflow-hidden bg-surface-100 dark:bg-surface-800">
+              <img
+                src={post.data.image}
+                alt={post.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4 flex flex-col justify-center min-w-0">
+              <span class="badge text-[10px] mb-2 w-fit">{t(lang, `categories.${post.data.category}`)}</span>
+              <h3 class="text-sm font-bold text-surface-800 dark:text-surface-200 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors line-clamp-2">
+                {post.data.title}
+              </h3>
+              <span class="text-xs text-surface-500 mt-1">{formatDate(post.data.pubDate, lang)}</span>
+            </div>
+          </article>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

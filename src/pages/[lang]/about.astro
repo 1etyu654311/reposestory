@@ -1,0 +1,87 @@
+---
+import PageLayout from '@layouts/PageLayout.astro';
+import Breadcrumbs from '@components/common/Breadcrumbs.astro';
+import { locales, t, type Locale } from '@i18n/utils';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Locale };
+const breadcrumbs = [{ label: t(lang, 'about.title'), href: `/${lang}/about/` }];
+---
+
+<PageLayout title={t(lang, 'about.title')}>
+  <div class="container-custom py-10">
+    <Breadcrumbs lang={lang} items={breadcrumbs} />
+
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl font-extrabold text-surface-900 dark:text-surface-50 mb-6">
+        {t(lang, 'about.title')}
+      </h1>
+
+      <div class="prose prose-lg dark:prose-dark max-w-none">
+        {lang === 'ar' && (
+          <Fragment>
+            <p>مرحباً بكم في <strong>تعلّم فكرة جديدة</strong> — وجهتكم الأولى لاكتشاف أفكار جديدة ومفيدة في عالم التقنية والمالية والتطوير الشخصي.</p>
+            <p>نؤمن بأن التعلم المستمر هو مفتاح النجاح. لذلك أنشأنا هذه المنصة لنشارككم أفضل المقالات والدروس بأربع لغات مختلفة.</p>
+            <h2>رسالتنا</h2>
+            <p>تبسيط المعرفة وجعلها متاحة للجميع، بغض النظر عن اللغة التي يتحدثونها.</p>
+            <h2>ما نقدمه</h2>
+            <ul>
+              <li>مقالات تعليمية في التقنية والبرمجة</li>
+              <li>نصائح مالية وإدارة الأموال</li>
+              <li>محتوى تطوير شخصي ومهني</li>
+              <li>محتوى بأربع لغات: العربية، الإنجليزية، الإسبانية، الفرنسية</li>
+            </ul>
+          </Fragment>
+        )}
+        {lang === 'en' && (
+          <Fragment>
+            <p>Welcome to <strong>Learn New Idea</strong> — your destination for discovering useful and innovative ideas in technology, finance, and personal development.</p>
+            <p>We believe that continuous learning is the key to success. That's why we created this platform to share the best articles and lessons in four different languages.</p>
+            <h2>Our Mission</h2>
+            <p>To simplify knowledge and make it accessible to everyone, regardless of the language they speak.</p>
+            <h2>What We Offer</h2>
+            <ul>
+              <li>Educational articles on technology and programming</li>
+              <li>Financial tips and money management</li>
+              <li>Personal and professional development content</li>
+              <li>Content in four languages: Arabic, English, Spanish, and French</li>
+            </ul>
+          </Fragment>
+        )}
+        {lang === 'es' && (
+          <Fragment>
+            <p>Bienvenido a <strong>Aprende Idea Nueva</strong> — tu destino para descubrir ideas útiles e innovadoras en tecnología, finanzas y desarrollo personal.</p>
+            <p>Creemos que el aprendizaje continuo es la clave del éxito. Por eso creamos esta plataforma para compartir los mejores artículos y lecciones en cuatro idiomas diferentes.</p>
+            <h2>Nuestra Misión</h2>
+            <p>Simplificar el conocimiento y hacerlo accesible para todos, sin importar el idioma que hablen.</p>
+            <h2>Lo Que Ofrecemos</h2>
+            <ul>
+              <li>Artículos educativos sobre tecnología y programación</li>
+              <li>Consejos financieros y gestión del dinero</li>
+              <li>Contenido de desarrollo personal y profesional</li>
+              <li>Contenido en cuatro idiomas: árabe, inglés, español y francés</li>
+            </ul>
+          </Fragment>
+        )}
+        {lang === 'fr' && (
+          <Fragment>
+            <p>Bienvenue sur <strong>Apprendre Nouvelle Idée</strong> — votre destination pour découvrir des idées utiles et innovantes en technologie, finance et développement personnel.</p>
+            <p>Nous croyons que l'apprentissage continu est la clé du succès. C'est pourquoi nous avons créé cette plateforme pour partager les meilleurs articles et leçons en quatre langues différentes.</p>
+            <h2>Notre Mission</h2>
+            <p>Simplifier la connaissance et la rendre accessible à tous, quelle que soit la langue parlée.</p>
+            <h2>Ce Que Nous Offrons</h2>
+            <ul>
+              <li>Articles éducatifs sur la technologie et la programmation</li>
+              <li>Conseils financiers et gestion de l'argent</li>
+              <li>Contenu de développement personnel et professionnel</li>
+              <li>Contenu en quatre langues : arabe, anglais, espagnol et français</li>
+            </ul>
+          </Fragment>
+        )}
+      </div>
+    </div>
+  </div>
+</PageLayout>

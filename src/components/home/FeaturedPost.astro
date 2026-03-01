@@ -1,0 +1,80 @@
+---
+import { t, type Locale } from '@i18n/utils';
+import { formatDate } from '@utils/seo';
+import { formatReadingTime, getReadingTime } from '@utils/reading-time';
+
+interface Props {
+  lang: Locale;
+  post: {
+    slug: string;
+    data: {
+      title: string;
+      description: string;
+      image: string;
+      pubDate: Date;
+      category: string;
+      tags: string[];
+      author: { name: string };
+    };
+    body?: string;
+  };
+}
+
+const { lang, post } = Astro.props;
+const readingTime = post.body ? getReadingTime(post.body, lang) : 5;
+---
+
+<section class="container-custom py-8">
+  <h2 class="text-sm font-semibold text-primary-600 dark:text-primary-400 uppercase tracking-wider mb-6">
+    {t(lang, 'home.featured')}
+  </h2>
+
+  <a href={`/${lang}/blog/${post.slug.split('/').pop()}/`} class="group block">
+    <div class="card overflow-hidden lg:grid lg:grid-cols-2 hover-lift">
+      <!-- Image -->
+      <div class="aspect-video lg:aspect-auto overflow-hidden bg-surface-100 dark:bg-surface-800">
+        <img
+          src={post.data.image}
+          alt={post.data.title}
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+        />
+      </div>
+
+      <!-- Content -->
+      <div class="p-6 lg:p-10 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="badge">{t(lang, `categories.${post.data.category}`)}</span>
+          <span class="text-xs text-surface-500 dark:text-surface-500">
+            {formatReadingTime(readingTime, lang)}
+          </span>
+        </div>
+
+        <h3 class="text-2xl lg:text-3xl font-bold text-surface-900 dark:text-surface-50 mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors line-clamp-2">
+          {post.data.title}
+        </h3>
+
+        <p class="text-surface-600 dark:text-surface-400 mb-6 line-clamp-3">
+          {post.data.description}
+        </p>
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-white text-xs font-bold">
+              {post.data.author.name.charAt(0)}
+            </div>
+            <div>
+              <span class="text-sm font-medium text-surface-700 dark:text-surface-300">{post.data.author.name}</span>
+              <span class="text-xs text-surface-500 dark:text-surface-500 block">{formatDate(post.data.pubDate, lang)}</span>
+            </div>
+          </div>
+
+          <span class="text-primary-600 dark:text-primary-400 text-sm font-medium group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform inline-flex items-center gap-1">
+            {t(lang, 'home.readMore')}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rtl:rotate-180"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </a>
+</section>

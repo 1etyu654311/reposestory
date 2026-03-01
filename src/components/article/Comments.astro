@@ -1,0 +1,43 @@
+---
+import { t, type Locale } from '@i18n/utils';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="mt-16 pt-10 border-t border-surface-200 dark:border-surface-800">
+  <h2 class="text-2xl font-bold text-surface-900 dark:text-surface-50 mb-8">
+    {t(lang, 'article.comments')}
+  </h2>
+
+  <div id="giscus-container" class="giscus">
+    <script
+      is:inline
+      src="https://giscus.app/client.js"
+      data-repo="your-username/your-repo"
+      data-repo-id="R_kgD..."
+      data-category="Announcements"
+      data-category-id="DIC_kwD..."
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang={lang}
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </div>
+</section>
+
+<style is:global>
+  /* Giscus theme adjustments */
+  .giscus-frame {
+    width: 100% !important;
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+import { t, type Locale } from '@i18n/utils';
+import { formatDate } from '@utils/seo';
+
+interface Props {
+  lang: Locale;
+  posts: {
+    slug: string;
+    data: {
+      title: string;
+      pubDate: Date;
+    };
+  }[];
+}
+
+const { lang, posts } = Astro.props;
+---
+
+<div class="card p-6">
+  <h3 class="text-lg font-bold text-surface-900 dark:text-surface-50 mb-6 flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-500"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    {t(lang, 'home.trending')}
+  </h3>
+
+  <div class="space-y-6">
+    {posts.map((post, index) => (
+      <a href={`/${lang}/blog/${post.slug.split('/').pop()}/`} class="group flex gap-4">
+        <span class="text-3xl font-black text-surface-100 dark:text-surface-800 tabular-nums transition-colors group-hover:text-primary-100 dark:group-hover:text-primary-900">
+          {String(index + 1).padStart(2, '0')}
+        </span>
+        <div class="min-w-0">
+          <h4 class="text-sm font-bold text-surface-800 dark:text-surface-200 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors line-clamp-2 leading-snug">
+            {post.data.title}
+          </h4>
+          <p class="text-[10px] text-surface-500 mt-1">
+            {formatDate(post.data.pubDate, lang)}
+          </p>
+        </div>
+      </a>
+    ))}
+  </div>
+</div>

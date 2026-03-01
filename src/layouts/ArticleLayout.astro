@@ -1,0 +1,68 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '@components/common/Header.astro';
+import Footer from '@components/common/Footer.astro';
+import ReadingProgress from '@components/article/ReadingProgress.astro';
+import TableOfContents from '@components/article/TableOfContents.astro';
+import Comments from '@components/article/Comments.astro';
+import { getLangFromUrl, t, type Locale } from '@i18n/utils';
+import type { TocItem } from '@utils/toc';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  headings: TocItem[];
+}
+
+const lang = getLangFromUrl(Astro.url) as Locale;
+const { title, description, image, publishedTime, modifiedTime, headings } = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={image}
+  type="article"
+  publishedTime={publishedTime}
+  modifiedTime={modifiedTime}
+>
+  <Header lang={lang} />
+  <ReadingProgress />
+
+  <main class="flex-1">
+    <div class="container-custom py-8">
+      <div class="lg:grid lg:grid-cols-[260px_1fr] lg:gap-12 xl:grid-cols-[280px_1fr]">
+        <!-- Sticky Table of Contents (Desktop) -->
+        <aside class="hidden lg:block">
+          <div class="sticky top-24">
+            <TableOfContents headings={headings} lang={lang} />
+          </div>
+        </aside>
+
+        <!-- Article Content -->
+        <article class="min-w-0" data-pagefind-body>
+          <!-- Mobile TOC -->
+          <div class="lg:hidden mb-8">
+            <details class="card p-4">
+              <summary class="font-semibold cursor-pointer text-surface-700 dark:text-surface-300">
+                {t(lang, 'article.toc')}
+              </summary>
+              <div class="mt-4">
+                <TableOfContents headings={headings} lang={lang} />
+              </div>
+            </details>
+          </div>
+
+          <slot />
+          
+          <Comments lang={lang} />
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>

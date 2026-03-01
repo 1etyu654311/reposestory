@@ -1,0 +1,23 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '@components/common/Header.astro';
+import Footer from '@components/common/Footer.astro';
+import { getLangFromUrl, type Locale } from '@i18n/utils';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const lang = getLangFromUrl(Astro.url) as Locale;
+const { title, description, image } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} image={image}>
+  <Header lang={lang} />
+  <main class="flex-1">
+    <slot />
+  </main>
+  <Footer lang={lang} />
+</BaseLayout>

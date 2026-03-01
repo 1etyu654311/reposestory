@@ -1,0 +1,64 @@
+---
+import PageLayout from '@layouts/PageLayout.astro';
+import Breadcrumbs from '@components/common/Breadcrumbs.astro';
+import { locales, t, type Locale } from '@i18n/utils';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Locale };
+const breadcrumbs = [{ label: t(lang, 'privacy.title'), href: `/${lang}/privacy/` }];
+---
+
+<PageLayout title={t(lang, 'privacy.title')}>
+  <div class="container-custom py-10">
+    <Breadcrumbs lang={lang} items={breadcrumbs} />
+
+    <div class="max-w-3xl mx-auto prose prose-lg dark:prose-dark">
+      <h1>{t(lang, 'privacy.title')}</h1>
+      
+      {lang === 'ar' ? (
+        <Fragment>
+          <p>آخر تحديث: فبراير 2026</p>
+          <h2>جمع المعلومات</h2>
+          <p>نحن لا نجمع أي معلومات شخصية عنك إلا ما تقدمه طواعية من خلال نموذج الاتصال أو الاشتراك في النشرة البريدية.</p>
+          <h2>ملفات تعريف الارتباط</h2>
+          <p>يستخدم موقعنا ملفات تعريف الارتباط لتحسين تجربتك. يمكنك تعطيلها من إعدادات المتصفح.</p>
+          <h2>تواصل معنا</h2>
+          <p>إذا كانت لديك أي أسئلة حول سياسة الخصوصية، تواصل معنا عبر صفحة الاتصال.</p>
+        </Fragment>
+      ) : lang === 'es' ? (
+        <Fragment>
+          <p>Última actualización: Febrero 2026</p>
+          <h2>Recopilación de Información</h2>
+          <p>No recopilamos información personal sobre usted excepto la que proporcione voluntariamente a través del formulario de contacto o la suscripción al boletín.</p>
+          <h2>Cookies</h2>
+          <p>Nuestro sitio utiliza cookies para mejorar su experiencia. Puede desactivarlas desde la configuración de su navegador.</p>
+          <h2>Contáctenos</h2>
+          <p>Si tiene alguna pregunta sobre nuestra política de privacidad, contáctenos a través de nuestra página de contacto.</p>
+        </Fragment>
+      ) : lang === 'fr' ? (
+        <Fragment>
+          <p>Dernière mise à jour : Février 2026</p>
+          <h2>Collecte d'Informations</h2>
+          <p>Nous ne collectons aucune information personnelle vous concernant, sauf celles que vous fournissez volontairement via le formulaire de contact ou l'abonnement à la newsletter.</p>
+          <h2>Cookies</h2>
+          <p>Notre site utilise des cookies pour améliorer votre expérience. Vous pouvez les désactiver depuis les paramètres de votre navigateur.</p>
+          <h2>Nous Contacter</h2>
+          <p>Si vous avez des questions sur notre politique de confidentialité, contactez-nous via notre page de contact.</p>
+        </Fragment>
+      ) : (
+        <Fragment>
+          <p>Last updated: February 2026</p>
+          <h2>Information Collection</h2>
+          <p>We do not collect any personal information about you except what you voluntarily provide through the contact form or newsletter subscription.</p>
+          <h2>Cookies</h2>
+          <p>Our site uses cookies to improve your experience. You can disable them from your browser settings.</p>
+          <h2>Contact Us</h2>
+          <p>If you have any questions about our privacy policy, contact us through our contact page.</p>
+        </Fragment>
+      )}
+    </div>
+  </div>
+</PageLayout>

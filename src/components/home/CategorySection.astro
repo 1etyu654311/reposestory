@@ -1,0 +1,39 @@
+---
+import { t, type Locale } from '@i18n/utils';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+
+const categories = [
+  { key: 'technology', icon: '💻', color: 'from-blue-500 to-cyan-500' },
+  { key: 'finance', icon: '💰', color: 'from-emerald-500 to-teal-500' },
+  { key: 'personal-development', icon: '🚀', color: 'from-purple-500 to-pink-500' },
+  { key: 'programming', icon: '⚡', color: 'from-amber-500 to-orange-500' },
+  { key: 'blog', icon: '📝', color: 'from-rose-500 to-red-500' },
+];
+---
+
+<section class="container-custom py-12">
+  <h2 class="text-2xl font-bold text-surface-900 dark:text-surface-50 mb-8">
+    {t(lang, 'home.categories')}
+  </h2>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 animate-stagger">
+    {categories.map((cat) => (
+      <a
+        href={`/${lang}/category/${cat.key}/`}
+        class="group card p-6 text-center hover-lift"
+      >
+        <div class={`w-14 h-14 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${cat.color} flex items-center justify-center text-2xl shadow-lg group-hover:scale-110 transition-transform`}>
+          {cat.icon}
+        </div>
+        <h3 class="text-sm font-semibold text-surface-700 dark:text-surface-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+          {t(lang, `categories.${cat.key}`)}
+        </h3>
+      </a>
+    ))}
+  </div>
+</section>

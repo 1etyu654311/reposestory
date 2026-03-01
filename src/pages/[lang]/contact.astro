@@ -1,0 +1,86 @@
+---
+import PageLayout from '@layouts/PageLayout.astro';
+import Breadcrumbs from '@components/common/Breadcrumbs.astro';
+import { locales, t, type Locale } from '@i18n/utils';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Locale };
+const breadcrumbs = [{ label: t(lang, 'contact.title'), href: `/${lang}/contact/` }];
+---
+
+<PageLayout title={t(lang, 'contact.title')}>
+  <div class="container-custom py-10">
+    <Breadcrumbs lang={lang} items={breadcrumbs} />
+
+    <div class="max-w-2xl mx-auto">
+      <h1 class="text-4xl font-extrabold text-surface-900 dark:text-surface-50 mb-4">
+        {t(lang, 'contact.title')}
+      </h1>
+
+      <p class="text-surface-600 dark:text-surface-400 mb-10">
+        {lang === 'ar' ? 'نسعد بتواصلكم معنا. أرسل لنا رسالتك وسنرد في أقرب وقت.' :
+         lang === 'es' ? 'Nos encanta escucharte. Envíanos un mensaje y te responderemos pronto.' :
+         lang === 'fr' ? 'Nous serions ravis de vous entendre. Envoyez-nous un message et nous vous répondrons rapidement.' :
+         "We'd love to hear from you. Send us a message and we'll reply as soon as possible."}
+      </p>
+
+      <form
+        action="https://formspree.io/f/your-form-id"
+        method="POST"
+        class="space-y-6"
+      >
+        <!-- Name -->
+        <div>
+          <label for="name" class="block text-sm font-medium text-surface-700 dark:text-surface-300 mb-2">
+            {t(lang, 'contact.name')}
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-3 rounded-xl bg-surface-50 dark:bg-surface-900 border border-surface-200 dark:border-surface-700 text-surface-800 dark:text-surface-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-surface-700 dark:text-surface-300 mb-2">
+            {t(lang, 'contact.email')}
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-3 rounded-xl bg-surface-50 dark:bg-surface-900 border border-surface-200 dark:border-surface-700 text-surface-800 dark:text-surface-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+          />
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="message" class="block text-sm font-medium text-surface-700 dark:text-surface-300 mb-2">
+            {t(lang, 'contact.message')}
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            class="w-full px-4 py-3 rounded-xl bg-surface-50 dark:bg-surface-900 border border-surface-200 dark:border-surface-700 text-surface-800 dark:text-surface-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white font-medium shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 transition-all"
+        >
+          {t(lang, 'contact.send')}
+        </button>
+      </form>
+    </div>
+  </div>
+</PageLayout>

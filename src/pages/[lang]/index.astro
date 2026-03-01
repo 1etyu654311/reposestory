@@ -1,0 +1,51 @@
+---
+import PageLayout from '@layouts/PageLayout.astro';
+import Hero from '@components/home/Hero.astro';
+import FeaturedPost from '@components/home/FeaturedPost.astro';
+import LatestArticles from '@components/home/LatestArticles.astro';
+import CategorySection from '@components/home/CategorySection.astro';
+import TrendingSidebar from '@components/home/TrendingSidebar.astro';
+import NewsletterForm from '@components/home/NewsletterForm.astro';
+import { getCollection } from 'astro:content';
+import { locales, type Locale } from '@i18n/utils';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Locale };
+
+// Get all blog posts for this language, sorted by date
+const allPosts = await getCollection('blog', ({ data, slug }) => {
+  return slug.startsWith(`${lang}/`) && !data.draft;
+});
+
+const sortedPosts = allPosts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const featuredPost = sortedPosts[0];
+const latestPosts = sortedPosts.slice(1, 7);
+---
+
+<PageLayout>
+  <Hero lang={lang} />
+  
+  {featuredPost && <FeaturedPost lang={lang} post={featuredPost} />}
+  
+  <div class="container-custom py-12">
+    <div class="lg:grid lg:grid-cols-[1fr_300px] lg:gap-12 xl:grid-cols-[1fr_340px]">
+      <!-- Main Content -->
+      <div class="space-y-16">
+        {latestPosts.length > 0 && <LatestArticles lang={lang} posts={latestPosts} isSidebar={true} />}
+        <CategorySection lang={lang} />
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="hidden lg:block space-y-8">
+        <TrendingSidebar lang={lang} posts={sortedPosts.slice(0, 5)} />
+        <NewsletterForm lang={lang} />
+      </div>
+    </div>
+  </div>
+</PageLayout>

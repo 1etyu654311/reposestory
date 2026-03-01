@@ -1,0 +1,87 @@
+---
+import { t, type Locale } from '@i18n/utils';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const year = new Date().getFullYear();
+
+const footerLinks = [
+  { key: 'nav.home', href: `/${lang}/` },
+  { key: 'nav.blog', href: `/${lang}/blog/` },
+  { key: 'nav.about', href: `/${lang}/about/` },
+  { key: 'nav.contact', href: `/${lang}/contact/` },
+  { key: 'nav.privacy', href: `/${lang}/privacy/` },
+];
+---
+
+<footer class="border-t border-surface-200 dark:border-surface-800 bg-white dark:bg-surface-950">
+  <!-- Newsletter Section -->
+  <div class="border-b border-surface-200 dark:border-surface-800">
+    <div class="container-custom py-12">
+      <div class="max-w-2xl mx-auto text-center">
+        <h3 class="text-2xl font-bold text-surface-900 dark:text-surface-50 mb-3">
+          {t(lang, 'newsletter.title')}
+        </h3>
+        <p class="text-surface-600 dark:text-surface-400 mb-6">
+          {t(lang, 'newsletter.subtitle')}
+        </p>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" id="newsletter-form">
+          <input
+            type="email"
+            placeholder={t(lang, 'newsletter.placeholder')}
+            required
+            class="flex-1 px-4 py-3 rounded-xl bg-surface-50 dark:bg-surface-900 border border-surface-200 dark:border-surface-700 text-surface-800 dark:text-surface-200 placeholder-surface-400 dark:placeholder-surface-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+          />
+          <button
+            type="submit"
+            class="px-6 py-3 rounded-xl bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white font-medium shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 transition-all whitespace-nowrap"
+          >
+            {t(lang, 'newsletter.button')}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container-custom py-10">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <!-- Logo & Description -->
+      <div class="flex flex-col items-center md:items-start gap-3">
+        <a href={`/${lang}/`} class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center">
+            <span class="text-white font-bold text-xs">LN</span>
+          </div>
+          <span class="text-base font-bold text-surface-800 dark:text-surface-200">
+            {t(lang, 'site.title')}
+          </span>
+        </a>
+        <p class="text-sm text-surface-500 dark:text-surface-500">
+          {t(lang, 'footer.madeWith')}
+        </p>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+        {footerLinks.map((link) => (
+          <a
+            href={link.href}
+            class="text-sm text-surface-500 dark:text-surface-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+          >
+            {t(lang, link.key)}
+          </a>
+        ))}
+      </nav>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-8 pt-6 border-t border-surface-200 dark:border-surface-800 text-center">
+      <p class="text-xs text-surface-400 dark:text-surface-600">
+        &copy; {year} {t(lang, 'site.title')}. {t(lang, 'footer.rights')}.
+      </p>
+    </div>
+  </div>
+</footer>

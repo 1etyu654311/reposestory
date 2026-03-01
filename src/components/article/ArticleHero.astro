@@ -1,0 +1,49 @@
+---
+import { formatDate } from '@utils/seo';
+import { formatReadingTime } from '@utils/reading-time';
+import { t, type Locale } from '@i18n/utils';
+
+interface Props {
+  title: string;
+  image: string;
+  category: string;
+  pubDate: Date;
+  readingTime: number;
+  lang: Locale;
+}
+
+const { title, image, category, pubDate, readingTime, lang } = Astro.props;
+---
+
+<div class="relative overflow-hidden rounded-2xl mb-10">
+  <!-- Image with overlay -->
+  <div class="aspect-video lg:aspect-[21/9] overflow-hidden">
+    <img
+      src={image}
+      alt={title}
+      class="w-full h-full object-cover"
+      loading="eager"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+  </div>
+
+  <!-- Content Overlay -->
+  <div class="absolute bottom-0 start-0 end-0 p-6 lg:p-10">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-white/20 backdrop-blur-sm text-white border border-white/10">
+        {t(lang, `categories.${category}`)}
+      </span>
+      <span class="text-white/80 text-sm">
+        {formatDate(pubDate, lang)}
+      </span>
+      <span class="text-white/60 text-sm">•</span>
+      <span class="text-white/80 text-sm">
+        {formatReadingTime(readingTime, lang)}
+      </span>
+    </div>
+
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-extrabold text-white leading-tight max-w-4xl">
+      {title}
+    </h1>
+  </div>
+</div>

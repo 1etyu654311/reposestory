@@ -1,0 +1,39 @@
+---
+import { t, type Locale } from '@i18n/utils';
+
+interface Props {
+  lang: Locale;
+  prev?: { slug: string; title: string } | null;
+  next?: { slug: string; title: string } | null;
+}
+
+const { lang, prev, next } = Astro.props;
+---
+
+<nav class="mt-12 pt-8 border-t border-surface-200 dark:border-surface-800">
+  <div class="grid gap-4 sm:grid-cols-2">
+    {prev ? (
+      <a href={`/${lang}/blog/${prev.slug.split('/').pop()}/`} class="group card p-5 hover-lift flex items-center gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-surface-400 group-hover:text-primary-500 transition-colors rtl:rotate-180"><path d="m15 18-6-6 6-6"/></svg>
+        <div class="min-w-0">
+          <span class="text-xs text-surface-500 dark:text-surface-500">{t(lang, 'article.previous')}</span>
+          <h4 class="text-sm font-semibold text-surface-800 dark:text-surface-200 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors line-clamp-1 mt-1">
+            {prev.title}
+          </h4>
+        </div>
+      </a>
+    ) : <div />}
+
+    {next ? (
+      <a href={`/${lang}/blog/${next.slug.split('/').pop()}/`} class="group card p-5 hover-lift flex items-center gap-4 sm:text-end sm:flex-row-reverse">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-surface-400 group-hover:text-primary-500 transition-colors rtl:rotate-180"><path d="m9 18 6-6-6-6"/></svg>
+        <div class="min-w-0">
+          <span class="text-xs text-surface-500 dark:text-surface-500">{t(lang, 'article.next')}</span>
+          <h4 class="text-sm font-semibold text-surface-800 dark:text-surface-200 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors line-clamp-1 mt-1">
+            {next.title}
+          </h4>
+        </div>
+      </a>
+    ) : <div />}
+  </div>
+</nav>
