@@ -1,0 +1,348 @@
+[0723/015423.379137:WARNING:chrome/app/chrome_main_linux.cc:84] Read channel stable from /tmp/chrome-extract/opt/google/chrome/CHROME_VERSION_EXTRA
+[0723/015423.379136:WARNING:chrome/app/chrome_main_linux.cc:84] Read channel stable from /tmp/chrome-extract/opt/google/chrome/CHROME_VERSION_EXTRA
+[9904:9923:0723/015423.388140:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[9904:9923:0723/015423.391169:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[9904:9923:0723/015423.391236:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[9904:9923:0723/015423.391258:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[9904:9923:0723/015423.391264:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[9904:9936:0723/015423.394220:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 9938: Permission denied (13)
+[9904:9923:0723/015423.395720:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[9904:9923:0723/015423.413291:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[9904:9936:0723/015423.414395:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 9942: Permission denied (13)
+
+DevTools listening on ws://127.0.0.1:18800/devtools/browser/f0b96d34-1ecd-4757-a9d1-d0ad50997735
+[9904:9936:0723/015423.448585:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 9994: Permission denied (13)
+[9904:9936:0723/015423.450424:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 9996: Permission denied (13)
+[9904:9904:0723/015423.457439:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[9904:9904:0723/015423.457492:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[9904:9923:0723/015423.457499:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[9904:9923:0723/015423.457519:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[9904:9904:0723/015423.457616:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[9904:9904:0723/015423.458129:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[9904:9936:0723/015423.462014:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10011: Permission denied (13)
+[9904:9936:0723/015423.463456:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10013: Permission denied (13)
+[9904:9923:0723/015423.466345:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[9904:9904:0723/015423.466345:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[9904:9923:0723/015423.466368:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[9904:9904:0723/015423.466458:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[9904:9923:0723/015423.466483:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[9904:9936:0723/015423.471478:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10027: Permission denied (13)
+[9904:9904:0723/015423.474069:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: 
+[9904:9904:0723/015423.474332:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[9904:9923:0723/015423.474377:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[9904:9904:0723/015423.479044:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[9904:9923:0723/015423.479090:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[9904:9904:0723/015423.481699:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[9904:9936:0723/015423.485366:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10042: Permission denied (13)
+[9904:9936:0723/015423.486958:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10043: Permission denied (13)
+[9904:9936:0723/015423.490669:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10056: Permission denied (13)
+[9904:9936:0723/015423.497968:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10063: Permission denied (13)
+[9904:9926:0723/015426.704332:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[0723/015428.624193:WARNING:chrome/app/chrome_main_linux.cc:84] Read channel stable from /tmp/chrome-extract/opt/google/chrome/CHROME_VERSION_EXTRA
+[0723/015428.624203:WARNING:chrome/app/chrome_main_linux.cc:84] Read channel stable from /tmp/chrome-extract/opt/google/chrome/CHROME_VERSION_EXTRA
+[10081:10098:0723/015428.633122:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[10081:10098:0723/015428.636170:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10081:10098:0723/015428.636246:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[10081:10098:0723/015428.636327:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[10081:10098:0723/015428.636333:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10081:10098:0723/015428.640577:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10081:10110:0723/015428.642487:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10112: Permission denied (13)
+[10081:10098:0723/015428.656926:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10081:10110:0723/015428.657635:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10116: Permission denied (13)
+
+DevTools listening on ws://127.0.0.1:18800/devtools/browser/88c899e4-7c13-458f-bc9c-e12e03384c78
+[10081:10110:0723/015428.792501:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10173: Permission denied (13)
+[10081:10110:0723/015428.793831:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10174: Permission denied (13)
+[10081:10081:0723/015428.801184:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10081:10081:0723/015428.801247:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10081:10098:0723/015428.801254:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10081:10098:0723/015428.801278:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10081:10081:0723/015428.801334:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10081:10081:0723/015428.801873:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10081:10110:0723/015428.805476:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10189: Permission denied (13)
+[10081:10110:0723/015428.807733:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10192: Permission denied (13)
+[10081:10081:0723/015428.809950:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10081:10098:0723/015428.809976:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[10081:10098:0723/015428.810008:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[10081:10081:0723/015428.810082:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10081:10098:0723/015428.810115:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10081:10110:0723/015428.900269:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10206: Permission denied (13)
+[10081:10081:0723/015428.903262:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: 
+[10081:10081:0723/015428.903303:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10081:10098:0723/015428.903352:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10081:10081:0723/015428.910460:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10081:10098:0723/015428.910523:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10081:10081:0723/015428.914112:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10081:10110:0723/015428.918760:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10220: Permission denied (13)
+[10081:10110:0723/015428.928175:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10228: Permission denied (13)
+[10081:10101:0723/015432.109213:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[10081:10110:0723/015440.760961:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10361: Permission denied (13)
+[10081:10110:0723/015440.854435:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10368: Permission denied (13)
+[10081:10110:0723/015440.867777:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10375: Permission denied (13)
+[10081:10110:0723/015440.904888:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10382: Permission denied (13)
+[10081:10110:0723/015440.985743:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10389: Permission denied (13)
+[10081:10110:0723/015440.991225:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10396: Permission denied (13)
+[10081:10110:0723/015441.017486:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10403: Permission denied (13)
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[10081:10110:0723/015441.121952:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10410: Permission denied (13)
+[10081:10110:0723/015441.192151:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10417: Permission denied (13)
+[10081:10110:0723/015441.389084:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10424: Permission denied (13)
+[10081:10101:0723/015501.111229:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[10081:10110:0723/015528.933856:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10541: Permission denied (13)
+[10081:10110:0723/015528.943446:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10548: Permission denied (13)
+[10081:10110:0723/015529.145509:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10555: Permission denied (13)
+[10081:10110:0723/015529.430275:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10562: Permission denied (13)
+[10081:10110:0723/015529.959164:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10569: Permission denied (13)
+[10081:10110:0723/015530.505834:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10576: Permission denied (13)
+[10081:10110:0723/015531.082355:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10583: Permission denied (13)
+[10081:10110:0723/015531.089289:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10590: Permission denied (13)
+[10081:10110:0723/015531.710502:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10597: Permission denied (13)
+[10081:10110:0723/015532.368260:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10604: Permission denied (13)
+[10081:10110:0723/015533.082553:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10611: Permission denied (13)
+[10081:10110:0723/015533.839232:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10618: Permission denied (13)
+[10081:10110:0723/015534.635014:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10626: Permission denied (13)
+[10081:10110:0723/015535.681184:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10633: Permission denied (13)
+[10081:10110:0723/015535.691860:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10640: Permission denied (13)
+[10081:10110:0723/015536.627513:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10647: Permission denied (13)
+[10081:10110:0723/015537.635169:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10654: Permission denied (13)
+[10081:10110:0723/015537.646967:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10661: Permission denied (13)
+[10081:10110:0723/015537.703097:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10668: Permission denied (13)
+[10081:10110:0723/015537.735253:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10675: Permission denied (13)
+[10081:10110:0723/015537.914229:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10682: Permission denied (13)
+[10081:10110:0723/015538.039459:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10689: Permission denied (13)
+[10081:10110:0723/015538.239555:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10696: Permission denied (13)
+[10081:10110:0723/015538.593087:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10703: Permission denied (13)
+[10081:10110:0723/015538.689304:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10710: Permission denied (13)
+[10081:10101:0723/015542.311851:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[10081:10101:0723/015704.728471:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[10081:10110:0723/015728.661686:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 10768: Permission denied (13)
+[10081:10101:0723/015955.516547:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[10081:10101:0723/020703.003152:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[10081:10110:0723/022615.633807:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 12573: Permission denied (13)
+[10081:10081:0723/032501.686680:ERROR:content/browser/devtools/devtools_http_handler.cc:830] Rejected an incoming WebSocket connection from the http://127.0.0.1:18800 origin. Use the command line flag --remote-allow-origins=http://127.0.0.1:18800 to allow connections from this origin or --remote-allow-origins=* to allow all origins.
+[0723/032517.011655:WARNING:chrome/app/chrome_main_linux.cc:84] Read channel stable from /tmp/chrome-extract/opt/google/chrome/CHROME_VERSION_EXTRA
+[0723/032517.012532:WARNING:chrome/app/chrome_main_linux.cc:84] Read channel stable from /tmp/chrome-extract/opt/google/chrome/CHROME_VERSION_EXTRA
+[15188:15206:0723/032517.021405:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[15188:15206:0723/032517.024627:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15188:15206:0723/032517.024721:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[15188:15206:0723/032517.024782:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[15188:15206:0723/032517.024788:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15188:15218:0723/032517.028199:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15220: Permission denied (13)
+[15188:15206:0723/032517.029554:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15188:15206:0723/032517.047082:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15188:15218:0723/032517.048906:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15225: Permission denied (13)
+
+DevTools listening on ws://127.0.0.1:18800/devtools/browser/67ec9602-1d36-4c9c-bfa5-ba63b9d76f36
+[15188:15218:0723/032517.183389:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15281: Permission denied (13)
+[15188:15218:0723/032517.185842:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15283: Permission denied (13)
+[15188:15188:0723/032517.191260:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15188:15188:0723/032517.191321:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15188:15206:0723/032517.191332:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15188:15206:0723/032517.191366:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15188:15188:0723/032517.191445:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15188:15188:0723/032517.191977:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15188:15218:0723/032517.195964:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15296: Permission denied (13)
+[15188:15218:0723/032517.197444:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15298: Permission denied (13)
+[15188:15188:0723/032517.200061:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15188:15206:0723/032517.200095:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[15188:15206:0723/032517.200133:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[15188:15188:0723/032517.200241:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15188:15206:0723/032517.200276:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15188:15218:0723/032517.205896:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15314: Permission denied (13)
+[15188:15188:0723/032517.320950:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: 
+[15188:15188:0723/032517.320985:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15188:15206:0723/032517.321058:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15188:15188:0723/032517.327884:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15188:15206:0723/032517.327954:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15188:15188:0723/032517.332769:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15188:15218:0723/032517.337946:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15329: Permission denied (13)
+[15188:15218:0723/032517.350333:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15340: Permission denied (13)
+[15188:15209:0723/032520.541276:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[15188:15209:0723/032520.543606:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[15188:15218:0723/032529.120878:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15353: Permission denied (13)
+[15188:15218:0723/032529.161303:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15360: Permission denied (13)
+[15188:15218:0723/032529.227538:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15367: Permission denied (13)
+[15188:15218:0723/032529.262600:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15374: Permission denied (13)
+[15188:15218:0723/032529.295184:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15381: Permission denied (13)
+[15188:15218:0723/032529.347955:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15388: Permission denied (13)
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[15188:15218:0723/032529.387023:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15395: Permission denied (13)
+[15188:15218:0723/032529.419435:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15402: Permission denied (13)
+[15188:15218:0723/032529.472780:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15409: Permission denied (13)
+[15188:15218:0723/032529.844965:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15416: Permission denied (13)
+[0723/032543.580238:WARNING:chrome/app/chrome_main_linux.cc:84] Read channel stable from /tmp/chrome-extract/opt/google/chrome/CHROME_VERSION_EXTRA
+[0723/032543.581386:WARNING:chrome/app/chrome_main_linux.cc:84] Read channel stable from /tmp/chrome-extract/opt/google/chrome/CHROME_VERSION_EXTRA
+[15431:15448:0723/032543.590261:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[15431:15448:0723/032543.593432:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15431:15448:0723/032543.593529:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[15431:15448:0723/032543.593564:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[15431:15448:0723/032543.593573:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15431:15460:0723/032543.596490:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15462: Permission denied (13)
+[15431:15448:0723/032543.598058:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15431:15448:0723/032543.615164:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15431:15460:0723/032543.616060:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15466: Permission denied (13)
+
+DevTools listening on ws://127.0.0.1:18800/devtools/browser/1fe99452-7117-421f-805d-f47768bac5b6
+[15431:15460:0723/032543.797685:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15526: Permission denied (13)
+[15431:15460:0723/032543.800064:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15527: Permission denied (13)
+[15431:15431:0723/032543.807453:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15431:15431:0723/032543.807521:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15431:15448:0723/032543.807538:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15431:15448:0723/032543.807566:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15431:15431:0723/032543.807651:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15431:15431:0723/032543.808281:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15431:15460:0723/032543.811821:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15540: Permission denied (13)
+[15431:15460:0723/032543.813872:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15545: Permission denied (13)
+[15431:15431:0723/032543.818308:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15431:15448:0723/032543.818335:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[15431:15448:0723/032543.818372:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[15431:15431:0723/032543.818511:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15431:15448:0723/032543.818541:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15431:15431:0723/032543.911861:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: 
+[15431:15431:0723/032543.911915:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15431:15448:0723/032543.911992:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15431:15431:0723/032543.920821:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15431:15448:0723/032543.920895:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[15431:15431:0723/032543.924188:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[15431:15460:0723/032543.938380:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15563: Permission denied (13)
+[15431:15451:0723/032547.136327:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[15431:15451:0723/032547.146333:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[15431:15460:0723/032555.703210:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15575: Permission denied (13)
+[15431:15460:0723/032555.720596:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15582: Permission denied (13)
+[15431:15460:0723/032555.780035:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15589: Permission denied (13)
+[15431:15460:0723/032555.822431:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15596: Permission denied (13)
+[15431:15460:0723/032555.857452:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15603: Permission denied (13)
+[15431:15460:0723/032555.914167:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15610: Permission denied (13)
+[15431:15460:0723/032555.943017:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15617: Permission denied (13)
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[15431:15460:0723/032555.990247:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15624: Permission denied (13)
+[15431:15460:0723/032556.053914:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15631: Permission denied (13)
+[15431:15460:0723/032556.387508:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15638: Permission denied (13)
+[15431:15451:0723/032608.198028:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[15431:15460:0723/032643.994716:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15669: Permission denied (13)
+[15431:15460:0723/032644.278695:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15676: Permission denied (13)
+[15431:15460:0723/032644.751529:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15683: Permission denied (13)
+[15431:15460:0723/032645.232720:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15690: Permission denied (13)
+[15431:15460:0723/032645.239664:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15697: Permission denied (13)
+[15431:15460:0723/032645.747616:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15715: Permission denied (13)
+[15431:15460:0723/032645.915529:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15726: Permission denied (13)
+[15431:15460:0723/032645.917416:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15727: Permission denied (13)
+[15431:15460:0723/032646.136076:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15744: Permission denied (13)
+[15431:15460:0723/032646.295009:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15756: Permission denied (13)
+[15431:15460:0723/032646.894487:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15763: Permission denied (13)
+[15431:15460:0723/032646.907080:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15770: Permission denied (13)
+[15462:15462:0723/032646.923441:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/032647.587501:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15801: Permission denied (13)
+[15431:15460:0723/032648.316762:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15808: Permission denied (13)
+[15431:15451:0723/032648.539906:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[15431:15460:0723/032648.623238:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15817: Permission denied (13)
+[15462:15462:0723/032648.868944:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/032649.087407:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15834: Permission denied (13)
+[15431:15460:0723/032649.921967:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15841: Permission denied (13)
+[15431:15460:0723/032650.771094:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15848: Permission denied (13)
+[15431:15460:0723/032650.801547:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15855: Permission denied (13)
+[15431:15460:0723/032651.789990:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15864: Permission denied (13)
+[15431:15460:0723/032652.753031:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15871: Permission denied (13)
+[15431:15460:0723/032653.106678:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15878: Permission denied (13)
+[15431:15460:0723/032654.504399:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15888: Permission denied (13)
+[15431:15460:0723/032654.550493:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15895: Permission denied (13)
+[15431:15460:0723/032654.612970:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15902: Permission denied (13)
+[15431:15460:0723/032654.622557:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15909: Permission denied (13)
+[15431:15460:0723/032654.716405:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15916: Permission denied (13)
+[15431:15460:0723/032654.729776:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15923: Permission denied (13)
+[15431:15460:0723/032654.777272:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15930: Permission denied (13)
+[15431:15460:0723/032713.231886:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15953: Permission denied (13)
+[15431:15460:0723/032713.234162:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15954: Permission denied (13)
+[15431:15460:0723/032713.454383:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 15971: Permission denied (13)
+[15462:15462:0723/032714.124759:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/032715.809466:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16006: Permission denied (13)
+[15462:15462:0723/032716.027187:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15451:0723/032831.522941:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[15431:15460:0723/032843.618959:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16074: Permission denied (13)
+[15431:15460:0723/032904.489458:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16098: Permission denied (13)
+[15431:15460:0723/032904.491107:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16099: Permission denied (13)
+[15431:15431:0723/032904.495132:ERROR:chrome/browser/ui/views/user_education/impl/browser_user_education_interface_impl.cc:186] Attempting to show IPH IPH_ExtensionsZeroStatePromo before browser initialization complete; IPH will not be shown.
+[15431:15460:0723/032904.714332:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16116: Permission denied (13)
+[15462:15462:0723/032905.642862:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/032907.511317:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16157: Permission denied (13)
+[15462:15462:0723/032907.754408:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15451:0723/033217.092735:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[15431:15451:0723/033806.478356:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[15431:15460:0723/034047.480513:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16594: Permission denied (13)
+[15431:15460:0723/034047.482289:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16595: Permission denied (13)
+[15431:15431:0723/034047.484724:ERROR:chrome/browser/ui/views/user_education/impl/browser_user_education_interface_impl.cc:186] Attempting to show IPH IPH_ExtensionsZeroStatePromo before browser initialization complete; IPH will not be shown.
+[15431:15460:0723/034047.838334:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16613: Permission denied (13)
+[15462:15462:0723/034048.506772:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/034049.883714:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16654: Permission denied (13)
+[15462:15462:0723/034050.103661:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/034208.372947:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16687: Permission denied (13)
+[15431:15460:0723/034208.374837:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16688: Permission denied (13)
+[15431:15460:0723/034208.591637:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16705: Permission denied (13)
+[15462:15462:0723/034209.167135:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/034210.616027:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16739: Permission denied (13)
+[15462:15462:0723/034210.829864:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/034305.879194:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16772: Permission denied (13)
+[15431:15460:0723/034305.881423:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16773: Permission denied (13)
+[15431:15431:0723/034305.883440:ERROR:chrome/browser/ui/views/user_education/impl/browser_user_education_interface_impl.cc:186] Attempting to show IPH IPH_ExtensionsZeroStatePromo before browser initialization complete; IPH will not be shown.
+[15431:15460:0723/034306.117255:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16790: Permission denied (13)
+[15462:15462:0723/034306.715553:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/034308.348602:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 16868: Permission denied (13)
+[15462:15462:0723/034308.579472:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/034319.587450:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/034321.276931:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/034331.858301:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/034333.180182:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/035043.342285:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 17043: Permission denied (13)
+[15431:15460:0723/035043.344552:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 17045: Permission denied (13)
+[15431:15431:0723/035043.345788:ERROR:chrome/browser/ui/views/user_education/impl/browser_user_education_interface_impl.cc:186] Attempting to show IPH IPH_ExtensionsZeroStatePromo before browser initialization complete; IPH will not be shown.
+[15431:15460:0723/035043.590424:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 17061: Permission denied (13)
+[15462:15462:0723/035044.432912:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/035046.173039:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 17097: Permission denied (13)
+[15462:15462:0723/035046.438165:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/082643.946587:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 24024: Permission denied (13)
+[15431:15460:0723/082644.003904:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 24030: Permission denied (13)
+[15431:15451:0723/121813.128340:ERROR:google_apis/gcm/engine/connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2
+[15431:15451:0723/124048.718850:ERROR:google_apis/gcm/engine/mcs_client.cc:750] Received close command, resetting connection.
+[15431:15460:0723/124557.439497:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 29820: Permission denied (13)
+[15431:15460:0723/124557.441541:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 29821: Permission denied (13)
+[15431:15431:0723/124557.442782:ERROR:chrome/browser/ui/views/user_education/impl/browser_user_education_interface_impl.cc:186] Attempting to show IPH IPH_ExtensionsZeroStatePromo before browser initialization complete; IPH will not be shown.
+[15431:15460:0723/124557.788210:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 29838: Permission denied (13)
+[15462:15462:0723/124558.837977:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/124600.308257:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 29877: Permission denied (13)
+[15462:15462:0723/124600.542697:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/132643.911587:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 30849: Permission denied (13)
+[15431:15460:0723/132643.917664:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 30856: Permission denied (13)
+[15431:15460:0723/132643.955490:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 30862: Permission denied (13)
+[15431:15460:0723/145004.613206:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 32619: Permission denied (13)
+[15431:15460:0723/145004.615094:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 32620: Permission denied (13)
+[15431:15431:0723/145004.616370:ERROR:chrome/browser/ui/views/user_education/impl/browser_user_education_interface_impl.cc:186] Attempting to show IPH IPH_ExtensionsZeroStatePromo before browser initialization complete; IPH will not be shown.
+[15462:15462:0723/145005.197150:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/145005.260554:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 32650: Permission denied (13)
+[15462:15462:0723/145005.264225:ERROR:gpu/command_buffer/service/gl_utils.cc:430] [.WebGL-0x2b4401b77600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[15431:15460:0723/145005.265224:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 32656: Permission denied (13)
+[15462:15462:0723/145005.304259:ERROR:gpu/command_buffer/service/gl_utils.cc:430] [.WebGL-0x2b4401b77600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[15462:15462:0723/145005.310805:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/145005.324103:ERROR:gpu/command_buffer/service/gl_utils.cc:430] [.WebGL-0x2b4401b77600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[15462:15462:0723/145005.336424:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/145005.340275:ERROR:gpu/command_buffer/service/gl_utils.cc:430] [.WebGL-0x2b4401b77600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[15462:15462:0723/145005.347398:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/145005.406927:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/145005.540770:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/153622.063932:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 33631: Permission denied (13)
+[15431:15460:0723/153622.066801:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 33632: Permission denied (13)
+[15431:15431:0723/153622.067500:ERROR:chrome/browser/ui/views/user_education/impl/browser_user_education_interface_impl.cc:186] Attempting to show IPH IPH_ExtensionsZeroStatePromo before browser initialization complete; IPH will not be shown.
+[15462:15462:0723/153622.674374:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/153622.721789:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 33661: Permission denied (13)
+[15462:15462:0723/153622.762852:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/153622.785836:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/153622.795478:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/153622.851822:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/153622.967981:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/153726.895157:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 33720: Permission denied (13)
+[15462:15462:0723/153727.406023:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15431:15460:0723/153727.457821:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 33729: Permission denied (13)
+[15462:15462:0723/153727.503315:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/153727.523725:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/153727.535150:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/153727.562518:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[15462:15462:0723/153727.789376:ERROR:gpu/command_buffer/service/gles2_cmd_decoder_passthrough.cc:1210] []Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.

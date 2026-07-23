@@ -1,0 +1,90 @@
+[
+  {
+    "proxy": "144.124.232.204:5222",
+    "ip": "144.124.232.204",
+    "country": "The Netherlands",
+    "countryCode": "NL",
+    "city": "Amsterdam",
+    "timezone": "Europe/Amsterdam"
+  },
+  {
+    "proxy": "195.63.130.33:8088",
+    "ip": "195.63.130.33",
+    "country": "The Netherlands",
+    "countryCode": "NL",
+    "city": "Amsterdam",
+    "timezone": "Europe/Amsterdam"
+  },
+  {
+    "proxy": "144.76.159.120:1081",
+    "ip": "188.240.57.84",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "city": "Edinburgh",
+    "timezone": "Europe/London"
+  },
+  {
+    "proxy": "193.25.215.182:22222",
+    "ip": "193.25.215.182",
+    "country": "United States",
+    "countryCode": "US",
+    "city": "Los Angeles",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "proxy": "144.76.159.120:1083",
+    "ip": "93.185.162.12",
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "city": "Jakarta",
+    "timezone": "Asia/Jakarta"
+  },
+  {
+    "proxy": "144.76.159.120:1090",
+    "ip": "5.181.233.38",
+    "country": "Canada",
+    "countryCode": "CA",
+    "city": "Montreal",
+    "timezone": "America/Toronto"
+  },
+  {
+    "proxy": "77.239.96.194:1081",
+    "ip": "77.239.96.194",
+    "country": "Germany",
+    "countryCode": "DE",
+    "city": "Frankfurt am Main",
+    "timezone": "Europe/Berlin"
+  },
+  {
+    "proxy": "144.124.227.88:3129",
+    "ip": "144.124.227.88",
+    "country": "The Netherlands",
+    "countryCode": "NL",
+    "city": "Amsterdam",
+    "timezone": "Europe/Amsterdam"
+  },
+  {
+    "proxy": "51.222.13.193:10084",
+    "ip": "51.222.13.193",
+    "country": "Canada",
+    "countryCode": "CA",
+    "city": "Beauharnois",
+    "timezone": "America/Toronto"
+  },
+  {
+    "proxy": "144.76.159.120:1100",
+    "ip": "37.19.206.42",
+    "country": "United States",
+    "countryCode": "US",
+    "city": "Ashburn",
+    "timezone": "America/New_York"
+  },
+  {
+    "proxy": "144.76.159.120:1085",
+    "ip": "81.19.208.86",
+    "country": "The Netherlands",
+    "countryCode": "NL",
+    "city": "Amsterdam",
+    "timezone": "Europe/Amsterdam"
+  }
+]

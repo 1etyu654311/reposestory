@@ -1,0 +1,58 @@
+{
+  "models": {
+    "providers": {
+      "litellm": {
+        "baseUrl": "http://127.0.0.1:4000/v1",
+        "apiKey": "sk-anything",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-5.1",
+            "name": "GLM-5.1 via LiteLLM",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "litellm/glm-5.1"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "open",
+      "allowFrom": [
+        "*"
+      ],
+      "groupPolicy": "allowlist",
+      "apiRoot": "https://fragrant-sun-c61b.mer622240.workers.dev",
+      "streaming": "partial"
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "28750677c47bbd4c5577f5ba3c2ec69ecb6133f79cfeb004"
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.3.22",
+    "lastTouchedAt": "2026-07-09T15:29:20.689Z"
+  }
+}
