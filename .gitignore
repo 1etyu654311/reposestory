@@ -22,3 +22,13 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Large binary files
+chrome-extract/
+chrome-force-persistent/
+chrome.deb
+gh.tar.gz
+*.deb
+*.crx
+public/scenes/
+public/voiceover*
